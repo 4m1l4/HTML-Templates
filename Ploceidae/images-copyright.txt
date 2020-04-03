@@ -1,0 +1,25 @@
+/*IMAGES*/
+
+1. Image used as background for Hero and Parallax blocks are from Freepik.com: 
+
+a. Gray Background: https://www.freepik.com/free-vector/3d-paper-style-wallpaper_7259267.htm#page=1&query=3d%20paper%20style%20wallpaper&position=22
+
+b. Yellow Background: https://www.freepik.com/free-vector/polygonal-3d-background-with-yellow-monochome-tones_6477262.htm#page=2&query=yellow+backgorund&position=32
+
+
+2. Images used for Gallery and Testimonials are from Pexels.com, they're free to use and don't require attribution. 
+
+/*gallery*/
+
+a. Jeffrey Czum: https://www.pexels.com/photo/white-concrete-building-under-blue-sky-4004291/
+b. Josh Hild: https://www.pexels.com/photo/hand-touching-glass-3944752/
+c. Leah Kelley: https://www.pexels.com/photo/woman-wearing-floral-dress-while-sitting-on-bed-3586911/
+d. Lukas Rodriguez: https://www.pexels.com/photo/green-grass-field-under-blue-sky-3551762/
+e. Wendy Wei: https://www.pexels.com/photo/orange-fruits-on-white-ceramic-bowls-4000421/
+
+f. Herman.io: https://www.pexels.com/photo/drone-footage-of-a-beach-3556117/
+
+/*testimonials*/
+g. Stefan Stefancik: https://www.pexels.com/photo/man-young-happy-smiling-91227/
+h. Hannah Nelson: https://www.pexels.com/photo/close-up-photography-of-a-woman-near-wall-1065084/
+i. Simon Robben: https://www.pexels.com/photo/face-facial-hair-fine-looking-guy-614810/

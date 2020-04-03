@@ -1,0 +1,214 @@
+/*
+Theme name: Glaucus
+Version: 1.0.
+Author: Amila 
+Author URI: https://rahatlook.info
+*/
+
+.parallax {
+  /* The image used */
+  /* Full height */
+  height: 100vh; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+#sidebar 
+ {
+    position: fixed;
+    width: 10%;
+    height: 100vh;
+}
+.menu li{list-style: none;}
+.menu li a{font-size: 20px; color: #fff;}
+.text {
+    width: 65%;
+    max-width: 65%;
+    position: relative;
+    top: 20%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2vw;
+    color: white;
+    text-shadow: 1px 1px 5px blue;
+}
+.credits{
+    width: 70%;
+    top: 10%;
+    font-family: serif;
+}
+.credit {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.welcome
+ {
+    max-width: 40%;
+    position: relative;
+    top: 45%;
+    text-align: center;
+    text-shadow: 0px 0px 10px white;
+}
+
+.typewriter h1 {
+  color: white;
+  animation-name: glowtext;
+  animation-duration: 20s;
+}
+
+@keyframes glowtext {
+  0%   {color: whitesmoke;}
+  20%  {color: yellow;}
+  50%  {color: skyblue;}
+  80% {color: mediumturquoise;}
+  100% {color: white;}
+}
+@keyframes glowlineright
+{
+  0%   {background: linear-gradient(to top right, transparent calc(50% - 1px), white, transparent calc(50% + 1px) );}
+  50%  {background: linear-gradient(to top right, transparent calc(50% - 1px), lightblue , transparent calc(50% + 1px) );}
+100% {background: linear-gradient(to top right, transparent calc(50% - 1px), yellow, transparent calc(50% + 1px) );}
+}
+@keyframes glowlineleft
+{
+  0%   {background: linear-gradient(to top left, transparent calc(50% - 1px), yellow, transparent calc(50% + 1px) );}
+  50%  {background: linear-gradient(to top left, transparent calc(50% - 1px), lightblue , transparent calc(50% + 1px) );}
+100% {background: linear-gradient(to top left, transparent calc(50% - 1px), white, transparent calc(50% + 1px) );}
+}
+
+/*MAGIC / MODAL SECTION*/
+.modal-body, .modal-title, .list-group-item {
+    font-family: serif;
+    color: #404040;
+    text-shadow: none;
+}
+.zigzag-titleL{
+    width: 100%;
+    font-size: 2vw;
+    position: relative;
+    top: -80px;
+    float: left;
+}
+.zigzag-titleR {
+    width: 100%;
+    font-size: 2vw;
+    position: relative;
+    top: -70px;
+    text-align: right;
+    float: right;
+}
+.fa-left {
+    float: left;
+    list-style: none;
+    position: relative;
+    top: -80px;
+    margin-left: 38px;
+}
+.fa-right {
+    float: right;
+    list-style: none;
+    position: relative;
+    top: -75px;
+}
+.three{
+
+    width: 85%;
+    height: 120px;
+    background: linear-gradient(to top right, transparent calc(50% - 1px), lightblue, transparent calc(50% + 1px) );
+    animation-name: glowlineright;
+    animation-duration: 10s;
+    margin-left: 9%;
+
+}
+.forth  {
+    width: 85%;
+    height: 120px;
+    background: linear-gradient(to top left, transparent calc(50% - 1px), lightblue, transparent calc(50% + 1px) );
+    animation-name: glowlineleft;
+    animation-duration: 10s;
+    margin-left: 9%;
+}
+.magici{
+    font-size: 3em;
+    color: yellow;
+    text-shadow: 0px 0px 15px white;
+}
+
+/*Cards*/
+.card-body{font-family: serif; color: #404040; text-shadow: none;}
+
+/*MEDIA QUERY*/
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+.menu{
+    width: 85%;
+    float: right;
+    position: relative;
+    top: -45px;
+    padding-left: 0px;
+}
+#sidebar{
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+.menu li{float: left;}
+.welcome{
+    max-width: 55%;
+    position: relative;
+    top: 40%;
+    text-align: center;
+    text-shadow: 0px 0px 10px white;}
+.text
+{
+    width: 60%;
+    position: relative;
+    top: 12%;
+    font-size: 12px;
+    text-align: ;
+}
+.fa-left{
+    top: -45px;
+    margin-left: 0px;
+}
+.zigzag-titleL {
+    width: 100%;
+    font-size: 2vw;
+    position: relative;
+    top: -40px;
+    float: left;
+}
+.fa-right {top: -40px;}
+.zigzag-titleR {top: -35px;}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+{
+.welcome {top:30%;}
+#sidebar{width: 100%; height: auto;}
+.menu{
+    width: 70%;
+    height: auto;
+    float: left;
+    position: relative;
+    top: -45px;
+    margin-left: 20px;
+}
+.menu li{width: auto; float: left;}
+.fa-left {top: -45px; margin-left: 15px;}
+.zigzag-titleL{top: -45px;}
+.fa-right {top: -45px;}
+.zigzag-titleR {top: -45px;}
+.card-body {font-size: 15px;}
+}
