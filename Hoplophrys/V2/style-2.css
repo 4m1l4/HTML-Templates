@@ -1,0 +1,192 @@
+/*
+Theme name: Hoplophrys
+Version: 1.0.
+Author: Amila 
+Author URI: https://rahatlook.info
+*/
+@font-face {
+  font-family: 'Carter One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Carter One'), local('CarterOne'), url(https://fonts.gstatic.com/s/carterone/v11/q5uCsoe5IOB2-pXv9UcNExN8hA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Carter One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Carter One'), local('CarterOne'), url(https://fonts.gstatic.com/s/carterone/v11/q5uCsoe5IOB2-pXv9UcNExN8hA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(https://fonts.gstatic.com/s/martelsans/v6/h0GsssGi7VdzDgKjM-4d8hjZx-6_Pg.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(https://fonts.gstatic.com/s/martelsans/v6/h0GsssGi7VdzDgKjM-4d8hjWx-6_Pg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Martel Sans Regular'), local('MartelSans-Regular'), url(https://fonts.gstatic.com/s/martelsans/v6/h0GsssGi7VdzDgKjM-4d8hjYx-4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,body{background-color: #e9ecef;}
+h1, h2, h3 {font-family: 'Carter One', cursive;}
+p{font-family: 'Martel Sans', sans-serif;}
+.titleRed{border-bottom: 1px solid white; text-align: right;}
+#header{background:#ffd4a0;}
+
+#topImg
+ {
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 90%, 0 0);
+     background: url('./images/ian-dooley-iD5aVJFCXJg-unsplash.jpg'); 
+     min-height: calc(100vh - 50px); 
+     background-size: cover; 
+     background-attachment: fixed; 
+     background-repeat: no-repeat; 
+     background-position: top;
+}
+#topImg h1{font-size: 4rem;}
+#topImg p {font-size: 2rem; line-height: 2rem;}
+#topImg i{color:#ffd4a0;}
+#topImg .container 
+{
+    position: relative;
+    top: 12rem;
+}
+.jumbotronRed 
+{
+    background: #822827;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%, 0 0);
+}
+/*
+* SHOWCASE
+*/
+#showcase figure a:hover {
+}
+#showcase figure a:hover::after { 
+            font-family: FontAwesome;
+            content: "\f00e"; 
+            text-align: left;
+            display: block;
+            position: absolute;
+            width:100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align:center;
+            z-index: 90;
+            color: white;
+            font-size: 50px;
+            top:30%;
+            bottom: 0;
+         } 
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #822827;
+  cursor: pointer;
+  color:#fff;
+}
+
+.btn:hover {
+  background-color: #822827;
+}
+
+.btn.active {
+  background-color: #ffd4a0;
+  color: #000;
+}
+/*
+* SERVICES
+*/
+#services i:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+/*Testimonials*/
+.testimonial-indicators li{background-color: #000;}
+.rounded-circle{width: 15rem;}
+/*
+* MORE ABOUT ME
+*/
+#moreaboutme{clip-path:polygon(0 10%, 100% 0, 100% 100%, 0% 100%, 0 0);}
+#moreaboutme i{color:white; margin-right: 10px;}
+#moreaboutme .list-group li{background: transparent; color: white;}
+#moreaboutme a {color: white; font-weight: bold;}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+{
+    #welcome, #welcome .container{padding-bottom: 0 !important; margin-bottom: 0 !important; padding-top: 0 !important;}
+    #testimonials, #showcase{padding-top: 0 !important;}
+    #showcase .btn{margin-bottom: 10px;}
+    #showcase{padding-bottom: 0 !important;}
+    #services .container{padding-bottom: 5%;}
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+{
+    #welcome, #welcome .container, #showcase, #showcase .container, #whatido{padding-top: 0 !important; padding-bottom: 0 !important;}
+    #testimonials{padding-top: 0 !important;}
+}

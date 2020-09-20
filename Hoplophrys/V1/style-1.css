@@ -1,0 +1,177 @@
+/*
+Theme name: Hoplophrys
+Version: 1.0.
+Author: Amila 
+Author URI: https://rahatlook.info
+*/
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+
+ body{
+    font-size: 1rem;
+    line-height: 1.65714286em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Russo One",sans-serif;
+    color: #484848;
+}
+body .body-inner {
+    padding: 0;
+    margin: 0;
+}
+.row{margin:0;}
+
+#header{padding-left: 5%; padding-right: 5%; background: #000;}
+
+#logo .navbar-brand{font-family: 'Russo One'; font-size: 30px; color: white}
+
+#carouselHoplophrysIndicators{height: calc(100vh - 70px);}
+#carouselHoplophrysInner .figure{height: calc(100vh - 70px); width: 100%;}
+#carouselHoplophrysInner .figure img{height: calc(100vh - 70px);}
+
+#carouselHoplophrysInner .carousel-item.active{height: calc(100vh - 70px);}
+
+.jumbotron{background: #ffcf2d;}
+.hoplophrysJumbotron {
+    background: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.hoplophrysJumbotronImg {width: 55%;}
+.JumbotronImg{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.hoplophrysJumbotronG{padding: 1%; background: #fff;}
+.hoplophrys-caption
+ {
+    position: relative;
+    top: calc(-90vh);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    padding: 5%;
+    text-shadow: 4px 1px 3px black;
+
+}
+.hoplophrys-caption h1{
+    font-size: 7rem;
+    line-height: 7rem;
+}
+.hoplophrys-indicators{
+    position: absolute;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    top: 40rem;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    height: 5px;
+    float: left;
+    padding: 0;
+}
+
+/*
+*
+*Services
+*
+*/
+#services .row{text-align: center;}
+/*
+*
+*Gallery Hover
+*
+*/
+#showcase figure a:hover {
+}
+#showcase figure a:hover::after { 
+            font-family: FontAwesome;
+            content: "\f00e"; 
+            text-align: left;
+            display: block;
+            position: absolute;
+            width:90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align:center;
+            z-index: 90;
+            color: white;
+            font-size: 30px;
+            top:20%;
+            bottom: 0;
+            color:#000;
+            text-align: center;
+         } 
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.izoom {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.gallery:hover .middle{opacity: 1;}
+.gallery:hover {opacity:0.5;}
+
+/*
+*
+*Testimonials
+*
+*/
+.testimonial-indicators li{background-color: #000;}
+.rounded-circle{width: 15rem;}
+/*
+*
+*Showcase
+*
+*/
+#showcase a{color:#404040;}
+
+/*
+*
+*Contact
+*
+*/
+#contact li{background: transparent;}
+#contact a, #social a{color:white;}
+#social a:hover{color:yellow; text-shadow: 1px 1px 1px white;}
+
+/*MEDIA DEVICES*/
+/* Phones Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+{
+    .hoplophrys-caption h1 {font-size: 5rem; line-height: 5rem;}
+    #showcase{padding-top: 0 !important;}
+    .row, .container{text-align: center;}
+    #contact img{}
+
+}
+
+/* Tablets Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+{
+    .hoplophrys-indicators{top:70rem;}
+}
